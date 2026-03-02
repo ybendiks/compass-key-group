@@ -38,7 +38,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient text-white py-16 lg:py-24">
+      <section className="hero-gradient text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -55,7 +55,7 @@ export default function ContactPage() {
       </section>
 
       {/* Two Column Layout */}
-      <section className="py-14 lg:py-20 bg-cream">
+      <section className="py-12 lg:py-14 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Contact Form */}

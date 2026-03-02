@@ -60,7 +60,7 @@ export default function Header() {
                 <div key={link.href} className="relative group">
                   <Link
                     href={link.href}
-                    className="px-3 py-2 text-sm font-medium text-slate hover:text-navy hover:bg-cream rounded-md transition-colors inline-flex items-center gap-1"
+                    className="px-3 py-2 text-base font-medium text-slate hover:text-navy hover:bg-cream rounded-md transition-colors inline-flex items-center gap-1"
                   >
                     {link.label}
                     <svg
@@ -103,7 +103,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-3 py-2 text-sm font-medium text-slate hover:text-navy hover:bg-cream rounded-md transition-colors"
+                  className="px-3 py-2 text-base font-medium text-slate hover:text-navy hover:bg-cream rounded-md transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -115,13 +115,13 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+12707353897"
-              className="text-sm font-medium text-slate hover:text-navy transition-colors"
+              className="text-base font-medium text-slate hover:text-navy transition-colors"
             >
               (270) 735-3897
             </a>
             <Link
               href="/contact"
-              className="bg-gold hover:bg-gold-light text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+              className="bg-gold hover:bg-gold-light text-white text-base font-semibold px-5 py-2.5 rounded-md transition-colors"
             >
               Get Started
             </Link>

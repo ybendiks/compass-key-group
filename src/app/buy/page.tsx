@@ -83,7 +83,7 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────── MLS Search Widget Placeholder ───────────── */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="bg-cream rounded-2xl border border-gray-200 overflow-hidden">
@@ -207,10 +207,10 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── Featured Listings Grid ───────────────── */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-14">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Featured Properties
               </h2>
@@ -232,10 +232,10 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── Buyer's Guide ───────────────── */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Your Path to Homeownership
               </h2>
@@ -276,7 +276,7 @@ export default function BuyPage() {
       </section>
 
       {/* ─────────── Budget Calculator Teaser ─────────── */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="bg-white rounded-2xl border border-gray-100 p-10 lg:p-14 text-center">
@@ -318,7 +318,7 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── CTA Banner ───────────────── */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl text-white mb-6">

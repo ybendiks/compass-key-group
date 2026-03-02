@@ -1,7 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { areas } from "@/data/areas";
+
+const areaHeroImages: Record<string, string> = {
+  elizabethtown:
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+  "fort-knox":
+    "https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?w=600&h=400&fit=crop",
+  bardstown:
+    "https://images.unsplash.com/photo-1584225064785-c62a8b43d148?w=600&h=400&fit=crop",
+  radcliff:
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+  "vine-grove":
+    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop",
+  "i65-corridor":
+    "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop",
+  louisville:
+    "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600&h=400&fit=crop",
+};
 
 export const metadata: Metadata = {
   title: "Areas We Serve",
@@ -13,7 +31,7 @@ export default function AreasPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -31,10 +49,10 @@ export default function AreasPage() {
       </section>
 
       {/* Area Cards Grid */}
-      <section className="py-16 lg:py-20 bg-cream">
+      <section className="py-12 lg:py-14 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
                 Explore Our Communities
               </h2>
@@ -52,8 +70,17 @@ export default function AreasPage() {
                   href={`/areas/${area.slug}`}
                   className="group block bg-white rounded-xl border border-gray-100 hover:shadow-lg hover:border-gold/30 transition-all duration-300 overflow-hidden h-full"
                 >
-                  {/* Color accent bar */}
-                  <div className="h-1.5 bg-gold/20 group-hover:bg-gold transition-colors" />
+                  {/* Area Image */}
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <Image
+                      src={areaHeroImages[area.slug] || areaHeroImages.elizabethtown}
+                      alt={`${area.name}, Kentucky — real estate and homes`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
 
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
@@ -110,10 +137,10 @@ export default function AreasPage() {
       </section>
 
       {/* Quick Highlights */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-12 lg:py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
                 Why Central Kentucky?
               </h2>
@@ -183,7 +210,7 @@ export default function AreasPage() {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">

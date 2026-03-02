@@ -31,7 +31,7 @@ export default function ElizabethtownPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Elizabethtown, Kentucky
@@ -43,7 +43,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Area Overview */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -89,7 +89,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Lifestyle & Community */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -127,7 +127,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Schools & Education */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -162,7 +162,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Housing Market Snapshot */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -197,7 +197,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Neighborhoods to Explore */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -279,7 +279,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* Why Live Here */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -322,7 +322,7 @@ export default function ElizabethtownPage() {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">

@@ -83,7 +83,7 @@ export default function BlogArticleLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient text-white py-16 lg:py-20">
+      <section className="hero-gradient text-white py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="flex items-center gap-3 mb-4">
@@ -133,7 +133,7 @@ export default function BlogArticleLayout({
       </section>
 
       {/* Article Content */}
-      <article className="py-12 lg:py-16 bg-white">
+      <article className="py-10 lg:py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="article-body">{children}</div>
         </div>
@@ -141,7 +141,7 @@ export default function BlogArticleLayout({
 
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
-        <section className="py-12 lg:py-16 bg-cream">
+        <section className="py-10 lg:py-12 bg-cream">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimateOnScroll>
               <h2 className="font-heading text-2xl font-bold text-navy mb-6">
@@ -169,7 +169,7 @@ export default function BlogArticleLayout({
       )}
 
       {/* CTA */}
-      <section className="hero-gradient text-white py-12 lg:py-16">
+      <section className="hero-gradient text-white py-10 lg:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">

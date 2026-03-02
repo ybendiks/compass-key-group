@@ -133,7 +133,7 @@ export default function MilitaryRelocationPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(militarySchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-gold-light text-sm font-medium px-4 py-1.5 rounded-full mb-6">
             <svg
@@ -162,7 +162,7 @@ export default function MilitaryRelocationPage() {
       </section>
 
       {/* Austin's Military Credentials */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-12 md:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="bg-navy rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
@@ -234,10 +234,10 @@ export default function MilitaryRelocationPage() {
       </section>
 
       {/* PCS Relocation Services */}
-      <section className="py-16 md:py-20 bg-cream">
+      <section className="py-12 md:py-14 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl md:text-4xl text-navy font-bold mb-4">
                 Making Your PCS Move Seamless
               </h2>
@@ -269,7 +269,7 @@ export default function MilitaryRelocationPage() {
       </section>
 
       {/* VA Loan Resources */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-12 md:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-10">
@@ -313,10 +313,10 @@ export default function MilitaryRelocationPage() {
       </section>
 
       {/* Fort Knox Area Info */}
-      <section className="py-16 md:py-20 bg-cream">
+      <section className="py-12 md:py-14 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl md:text-4xl text-navy font-bold mb-4">
                 Living Near Fort Knox
               </h2>
@@ -427,10 +427,10 @@ export default function MilitaryRelocationPage() {
 
       {/* Military Testimonials */}
       {militaryReviews.length > 0 && (
-        <section className="py-16 md:py-20 bg-white">
+        <section className="py-12 md:py-14 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimateOnScroll>
-              <div className="text-center mb-12">
+              <div className="text-center mb-8">
                 <h2 className="font-heading text-3xl md:text-4xl text-navy font-bold mb-4">
                   What Military Families Say
                 </h2>
@@ -453,7 +453,7 @@ export default function MilitaryRelocationPage() {
       )}
 
       {/* CTA */}
-      <section className="hero-gradient py-16 md:py-20">
+      <section className="hero-gradient py-12 md:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">

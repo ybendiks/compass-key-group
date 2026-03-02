@@ -113,7 +113,7 @@ export default function SellPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sellSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -131,7 +131,7 @@ export default function SellPage() {
 
       {/* Home Valuation CTA */}
       <section className="bg-cream border-y-4 border-gold-pale">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-14 text-center">
           <AnimateOnScroll>
             <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12 border border-gold-pale">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-pale mb-6">
@@ -159,10 +159,10 @@ export default function SellPage() {
       </section>
 
       {/* Selling Process */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-12 lg:py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
                 Our Proven Selling Process
               </h2>
@@ -194,10 +194,10 @@ export default function SellPage() {
       </section>
 
       {/* Why Sell With Us */}
-      <section className="py-16 lg:py-20 bg-cream">
+      <section className="py-12 lg:py-14 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
                 Why Sell With Us
               </h2>
@@ -227,10 +227,10 @@ export default function SellPage() {
       </section>
 
       {/* Recently Sold */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-12 lg:py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
                 Recently Sold Properties
               </h2>
@@ -253,7 +253,7 @@ export default function SellPage() {
 
       {/* Seller Testimonial */}
       {sellerReview && (
-        <section className="py-16 lg:py-20 bg-cream">
+        <section className="py-12 lg:py-14 bg-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <AnimateOnScroll>
               <div className="mb-8">
@@ -283,7 +283,7 @@ export default function SellPage() {
       )}
 
       {/* CTA */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">

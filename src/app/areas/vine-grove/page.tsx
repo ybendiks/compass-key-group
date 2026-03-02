@@ -31,7 +31,7 @@ export default function VineGrovePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Vine Grove, Kentucky
@@ -43,7 +43,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Area Overview */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto">
@@ -86,7 +86,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Lifestyle & Community */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll delay={100}>
             <div className="max-w-3xl mx-auto">
@@ -125,7 +125,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Schools & Education */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll delay={100}>
             <div className="max-w-3xl mx-auto">
@@ -159,7 +159,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Housing Market Snapshot */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll delay={100}>
             <div className="max-w-3xl mx-auto">
@@ -196,7 +196,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Neighborhoods & Property Types */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll delay={100}>
             <div className="max-w-3xl mx-auto">
@@ -235,7 +235,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* Why Live in Vine Grove */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll delay={100}>
             <div className="max-w-3xl mx-auto">
@@ -378,7 +378,7 @@ export default function VineGrovePage() {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">

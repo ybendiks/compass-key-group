@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 };
 
 const serviceAreas = [
-  "Elizabethtown",
-  "Fort Knox",
-  "Radcliff",
-  "Louisville",
-  "Hardin County",
-  "Bardstown",
-  "Shepherdsville",
+  { name: "Elizabethtown", href: "/areas/elizabethtown" },
+  { name: "Fort Knox", href: "/areas/fort-knox" },
+  { name: "Radcliff", href: "/areas/radcliff" },
+  { name: "Vine Grove", href: "/areas/vine-grove" },
+  { name: "Bardstown", href: "/areas/bardstown" },
+  { name: "I-65 Corridor", href: "/areas/i65-corridor" },
+  { name: "Louisville", href: "/areas/louisville" },
 ];
 
 export default function Home() {
@@ -60,7 +60,7 @@ export default function Home() {
       {/* ───────────────────── Hero Section ───────────────────── */}
       <section className="hero-gradient relative min-h-[600px] flex items-center">
         <div className="absolute inset-0 bg-black/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center lg:text-left">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center lg:text-left">
           <AnimateOnScroll>
             <p className="text-gold-light font-body text-sm uppercase tracking-[0.2em] mb-4">
               Veteran-Owned &middot; Elizabethtown, KY
@@ -99,10 +99,10 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Value Proposition ───────────────── */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-14">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Why Compass & Key
               </h2>
@@ -209,10 +209,10 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Social Proof / Reviews ───────────────── */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-14">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 What Our Clients Say
               </h2>
@@ -258,10 +258,10 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Featured Listings ───────────────── */}
-      <section className="bg-cream py-16 lg:py-20">
+      <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-14">
+            <div className="text-center mb-10">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Featured Properties
               </h2>
@@ -307,10 +307,10 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Service Areas ───────────────── */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Areas We Serve
               </h2>
@@ -322,14 +322,15 @@ export default function Home() {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={100}>
-            <div className="flex flex-wrap justify-center gap-3 mb-10">
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
               {serviceAreas.map((area) => (
-                <span
-                  key={area}
-                  className="bg-cream text-navy font-body text-sm font-medium px-5 py-2.5 rounded-full border border-gray-100"
+                <Link
+                  key={area.name}
+                  href={area.href}
+                  className="bg-cream text-navy font-body text-sm font-medium px-5 py-2.5 rounded-full border border-gray-100 hover:bg-gold/10 hover:border-gold/30 hover:text-gold transition-colors"
                 >
-                  {area}
-                </span>
+                  {area.name}
+                </Link>
               ))}
             </div>
           </AnimateOnScroll>
@@ -361,7 +362,7 @@ export default function Home() {
       </section>
 
       {/* ───────────────── CTA Banner ───────────────── */}
-      <section className="hero-gradient py-16 lg:py-20">
+      <section className="hero-gradient py-12 lg:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl text-white mb-6">

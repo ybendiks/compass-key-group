@@ -149,7 +149,7 @@ export default function JoinPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jobSchema) }}
       />
       {/* Hero */}
-      <section className="hero-gradient text-white py-16 lg:py-24">
+      <section className="hero-gradient text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -166,10 +166,10 @@ export default function JoinPage() {
       </section>
 
       {/* Why Join */}
-      <section className="py-16 lg:py-24 bg-cream">
+      <section className="py-12 lg:py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy mb-4">
                 Why Compass &amp; Key Group?
               </h2>
@@ -200,7 +200,7 @@ export default function JoinPage() {
       </section>
 
       {/* Austin's Quote */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-12 lg:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="relative bg-cream rounded-xl p-8 md:p-12">
@@ -232,7 +232,7 @@ export default function JoinPage() {
       </section>
 
       {/* Real Broker Benefits */}
-      <section className="py-16 lg:py-24 bg-cream">
+      <section className="py-12 lg:py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimateOnScroll>
@@ -305,7 +305,7 @@ export default function JoinPage() {
       </section>
 
       {/* Application CTA */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-10">
