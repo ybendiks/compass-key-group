@@ -45,7 +45,6 @@ export default function TeamCard({ member }: { member: TeamMember }) {
           <SocialIcons
             links={member.socialLinks}
             name={member.name}
-            platforms={member.cardSocials}
             className="flex gap-2"
             iconClass="w-4.5 h-4.5"
           />
