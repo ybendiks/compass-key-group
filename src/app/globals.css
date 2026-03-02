@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #22334b;
+  --navy-light: #2d4060;
+  --slate: #3a4f6e;
+  --gold: #dfb766;
+  --gold-light: #e8c97e;
+  --gold-pale: #f5e6c8;
+  --cream: #f4f3f2;
+  --white: #ffffff;
+  --black: #000000;
+  --text-primary: #000000;
+  --text-secondary: #4a5568;
+  --text-light: #718096;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-slate: var(--slate);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-pale: var(--gold-pale);
+  --color-cream: var(--cream);
+  --font-heading: var(--font-dm-serif);
+  --font-body: var(--font-dm-sans);
+}
+
+body {
+  background: var(--white);
+  color: var(--text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+/* Scroll animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.visible {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Property card image placeholder gradient */
+.property-img-placeholder {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+}
+
+/* Gold gradient for hero sections */
+.hero-gradient {
+  background: linear-gradient(135deg, #22334b 0%, #3a4f6e 50%, #2d4060 100%);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
