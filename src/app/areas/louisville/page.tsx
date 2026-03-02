@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
-  title: "Louisville KY Real Estate",
+  title: "Homes for Sale in Louisville KY",
   description:
-    "Find homes for sale in Louisville, Kentucky. Compass & Key Group brings personalized, small-brokerage service to Louisville's diverse neighborhoods and housing market.",
+    "Find homes for sale in Louisville KY. Compass & Key Group brings personalized small-brokerage service to Louisville's diverse neighborhoods and housing market.",
 };
 
 export default function LouisvillePage() {

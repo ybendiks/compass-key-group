@@ -5,9 +5,9 @@ import TestimonialCard from "@/components/TestimonialCard";
 import { reviews } from "@/data/reviews";
 
 export const metadata: Metadata = {
-  title: "Military Relocation | Fort Knox PCS",
+  title: "Military Relocation & PCS to Fort Knox",
   description:
-    "Veteran-owned real estate services for military PCS moves to Fort Knox and Central Kentucky. VA loan expertise, area orientation, and personalized relocation support from a Marine Corps veteran.",
+    "Veteran-owned military relocation services for PCS moves to Fort Knox KY. VA loan expertise, area orientation, and housing support from a Marine veteran.",
 };
 
 const militaryReviews = reviews.filter((r) => r.type === "military");

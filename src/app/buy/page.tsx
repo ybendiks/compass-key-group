@@ -7,15 +7,7 @@ import { listings } from "@/data/listings";
 export const metadata: Metadata = {
   title: "Buy a Home in Elizabethtown KY",
   description:
-    "Search homes for sale in Elizabethtown, Fort Knox, Radcliff, and Central Kentucky. Compass & Key Group helps buyers find their perfect home with expert guidance.",
-  openGraph: {
-    title: "Buy a Home in Elizabethtown KY | Compass & Key Group",
-    description:
-      "Search homes for sale in Elizabethtown, Fort Knox, and Central Kentucky. Expert guidance from a veteran-owned brokerage.",
-    type: "website",
-    locale: "en_US",
-    siteName: "Compass & Key Group",
-  },
+    "Search homes for sale in Elizabethtown, Fort Knox, Radcliff, and Central Kentucky. Expert buyer guidance from veteran-owned Compass & Key Group.",
 };
 
 const buyerSteps = [

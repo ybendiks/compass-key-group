@@ -5,7 +5,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Homes for Sale in Vine Grove KY",
   description:
-    "Explore homes for sale in Vine Grove, Kentucky. Affordable small-town living near Fort Knox with larger lots, quiet neighborhoods, and a tight-knit community.",
+    "Explore homes for sale in Vine Grove KY. Affordable small-town living near Fort Knox with larger lots, quiet neighborhoods, and a tight-knit community.",
 };
 
 export default function VineGrovePage() {

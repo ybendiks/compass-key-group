@@ -3,9 +3,12 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Join Our Team",
+  title: {
+    absolute:
+      "Join Our Team | Compass & Key Group | Real Broker LLC",
+  },
   description:
-    "Build your real estate career with Compass & Key Group. Veteran-led culture, Real Broker LLC partnership, and a growth-focused environment in Central Kentucky.",
+    "Build your real estate career with Compass & Key Group and Real Broker LLC. Veteran-led culture, top commission splits, and growth in Central Kentucky.",
 };
 
 const benefits = [

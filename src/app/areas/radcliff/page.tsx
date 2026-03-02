@@ -5,7 +5,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Homes for Sale in Radcliff KY",
   description:
-    "Find homes for sale in Radcliff, Kentucky — directly adjacent to Fort Knox. Affordable housing, military-friendly community, and convenient location. Compass & Key Group.",
+    "Find homes for sale in Radcliff KY, directly adjacent to Fort Knox. Affordable military-friendly housing, convenient location, and strong community support.",
 };
 
 export default function RadcliffPage() {

@@ -5,7 +5,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Homes for Sale in Elizabethtown KY",
   description:
-    "Find homes for sale in Elizabethtown, Kentucky. Explore neighborhoods, schools, housing market data, and lifestyle info from local real estate experts at Compass & Key Group.",
+    "Find homes for sale in Elizabethtown KY. Explore E-town neighborhoods, schools, housing prices, and lifestyle info from local real estate experts at Compass & Key Group.",
 };
 
 export default function ElizabethtownPage() {

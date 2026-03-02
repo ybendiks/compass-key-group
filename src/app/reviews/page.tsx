@@ -5,9 +5,12 @@ import { reviews } from "@/data/reviews";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Client Reviews",
+  title: {
+    absolute:
+      "Client Reviews | Compass & Key Group Elizabethtown KY",
+  },
   description:
-    "See what our clients are saying about Compass & Key Group. 5-star rated on Google, trusted by families across Central Kentucky for buying, selling, and military relocation.",
+    "Read 5-star client reviews for Compass & Key Group. Trusted by families across Elizabethtown, Fort Knox, and Central Kentucky for buying, selling, and military relocation.",
 };
 
 export default function ReviewsPage() {

@@ -3,9 +3,9 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us | Elizabethtown KY Realtors",
   description:
-    "Get in touch with Compass & Key Group. Whether you're buying, selling, or relocating to Central Kentucky, our team is ready to help.",
+    "Contact Compass & Key Group in Elizabethtown KY. Whether buying, selling, or relocating to Fort Knox and Central Kentucky, our team is ready to help.",
 };
 
 export default function ContactPage() {

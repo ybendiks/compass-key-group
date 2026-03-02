@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
-  title: "Homes Near Fort Knox KY | Military Relocation",
+  title: "Homes for Sale in Fort Knox KY",
   description:
-    "Find homes near Fort Knox, Kentucky. Veteran-owned brokerage specializing in military PCS moves, VA loans, and off-post housing in the Fort Knox area.",
+    "Find homes near Fort Knox KY. Veteran-owned brokerage specializing in military PCS moves, VA loans, and off-post housing in Radcliff, Vine Grove, and Elizabethtown.",
 };
 
 export default function FortKnoxPage() {

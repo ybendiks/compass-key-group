@@ -4,9 +4,9 @@ import BlogCard from "@/components/BlogCard";
 import { blogPosts } from "@/data/blog-posts";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Real Estate Blog | Elizabethtown KY",
   description:
-    "Real estate tips, market updates, and community guides for Elizabethtown, Fort Knox, and Central Kentucky from the Compass & Key Group team.",
+    "Real estate tips, market updates, and community guides for Elizabethtown, Fort Knox, and Central Kentucky from Compass & Key Group.",
 };
 
 export default function BlogPage() {

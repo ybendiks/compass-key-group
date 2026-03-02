@@ -6,9 +6,9 @@ import { soldListings } from "@/data/listings";
 import { reviews } from "@/data/reviews";
 
 export const metadata: Metadata = {
-  title: "Sell Your Home | Compass & Key Group",
+  title: "Sell Your Home in Elizabethtown KY",
   description:
-    "Sell your home in Elizabethtown, KY with expert marketing, strategic pricing, and local market knowledge. Get a free home valuation from Compass & Key Group.",
+    "Sell your home in Elizabethtown KY with expert marketing, strategic pricing, and local market knowledge. Free home valuation from Compass & Key Group.",
 };
 
 const steps = [

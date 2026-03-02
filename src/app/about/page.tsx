@@ -6,9 +6,12 @@ import TeamCard from "@/components/TeamCard";
 import { team } from "@/data/team";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: {
+    absolute:
+      "About Us & Our Team | Compass & Key Group Elizabethtown KY",
+  },
   description:
-    "Meet the team behind Compass & Key Group — a veteran-owned real estate brokerage serving Elizabethtown, Fort Knox, and Central Kentucky with integrity, service, and results.",
+    "Meet the veteran-owned team behind Compass & Key Group. Serving Elizabethtown, Fort Knox, and Central Kentucky with integrity, service, and proven results.",
 };
 
 const values = [

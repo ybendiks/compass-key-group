@@ -7,17 +7,12 @@ import { listings } from "@/data/listings";
 import { reviews } from "@/data/reviews";
 
 export const metadata: Metadata = {
-  title: "Compass & Key Group | Elizabethtown KY Real Estate",
-  description:
-    "Veteran-owned real estate brokerage serving Elizabethtown, Fort Knox, and Central Kentucky. Buy, sell, or relocate with a team built on integrity, service, and results.",
-  openGraph: {
-    title: "Compass & Key Group | Elizabethtown KY Real Estate",
-    description:
-      "Veteran-owned real estate brokerage serving Elizabethtown, Fort Knox, and Central Kentucky. Buy, sell, or relocate with integrity, service, and results.",
-    type: "website",
-    locale: "en_US",
-    siteName: "Compass & Key Group",
+  title: {
+    absolute:
+      "Realtors in Elizabethtown KY | Compass & Key Group | Veteran-Owned",
   },
+  description:
+    "Veteran-owned realtors in Elizabethtown KY serving Fort Knox, Radcliff, and Central Kentucky. Buy, sell, or relocate with integrity, service, and results.",
 };
 
 const serviceAreas = [

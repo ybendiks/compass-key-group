@@ -3,9 +3,9 @@ import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
-  title: "I-65 Corridor KY Homes | Commuter Communities",
+  title: "Homes for Sale in I-65 Corridor KY",
   description:
-    "Explore homes along the I-65 corridor between Louisville and Elizabethtown, Kentucky. Affordable commuter communities in Shepherdsville, Lebanon Junction, and Bullitt County.",
+    "Find homes along the I-65 corridor between Louisville and Elizabethtown KY. Affordable commuter communities in Shepherdsville, Bullitt County, and beyond.",
 };
 
 export default function I65CorridorPage() {

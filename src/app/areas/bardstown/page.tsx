@@ -5,7 +5,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Homes for Sale in Bardstown KY",
   description:
-    "Explore homes for sale in Bardstown, Kentucky — the Bourbon Capital of the World. Historic charm, award-winning dining, and affordable real estate in Nelson County.",
+    "Explore homes for sale in Bardstown KY — the Bourbon Capital of the World. Historic charm, award-winning dining, and affordable Nelson County real estate.",
 };
 
 export default function BardstownPage() {
