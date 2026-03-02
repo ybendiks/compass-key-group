@@ -62,7 +62,7 @@ export default function AboutPage() {
       },
       knowsAbout: ["Real Estate", "Military Relocation", "VA Loans"],
       award: "U.S. Marine Corps Veteran",
-      url: `${SITE_URL}/about`,
+      url: `${SITE_URL}/about/austin-kutz`,
     },
     {
       "@context": "https://schema.org",
@@ -75,7 +75,7 @@ export default function AboutPage() {
         url: SITE_URL,
       },
       alumniOf: "Oakland City University",
-      url: `${SITE_URL}/about`,
+      url: `${SITE_URL}/about/steve-nikirk`,
     },
     {
       "@context": "https://schema.org",
@@ -88,7 +88,7 @@ export default function AboutPage() {
         url: SITE_URL,
       },
       knowsAbout: ["Local Builders", "Hardin County Real Estate"],
-      url: `${SITE_URL}/about`,
+      url: `${SITE_URL}/about/ciara-hardesty`,
     },
   ];
 
@@ -121,14 +121,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Headshot */}
             <AnimateOnScroll>
-              <div className="h-[500px] sm:h-[560px] rounded-2xl overflow-hidden relative">
-                <Image
-                  src="/images/austin-kutz.webp"
-                  alt="Austin Kutz — Founder & Owner of Compass & Key Group"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
+              <Link href="/about/austin-kutz/" className="block">
+                <div className="h-[500px] sm:h-[560px] rounded-2xl overflow-hidden relative">
+                  <Image
+                    src="/images/austin-kutz.webp"
+                    alt="Austin Kutz — Founder & Owner of Compass & Key Group"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+              </Link>
             </AnimateOnScroll>
 
             {/* Bio */}
@@ -137,9 +139,11 @@ export default function AboutPage() {
                 <p className="text-sm font-semibold text-gold uppercase tracking-wider mb-2">
                   Owner / Realtor
                 </p>
-                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-6">
-                  Austin Kutz
-                </h2>
+                <Link href="/about/austin-kutz/" className="hover:text-gold transition-colors">
+                  <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-6">
+                    Austin Kutz
+                  </h2>
+                </Link>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
                     Austin is a proud U.S. Marine Corps veteran who enlisted
@@ -181,6 +185,13 @@ export default function AboutPage() {
                 <p className="text-xs text-gray-400 mt-4">
                   KY Real Estate License #277797
                 </p>
+
+                <Link
+                  href="/about/austin-kutz/"
+                  className="inline-block mt-4 text-sm font-semibold text-gold hover:text-gold-light transition-colors"
+                >
+                  View Full Profile &rarr;
+                </Link>
               </div>
             </AnimateOnScroll>
           </div>
