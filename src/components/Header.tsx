@@ -25,11 +25,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src="/images/logos/logo-color.webp"
+              src="/images/logos/compass-logo.jpg"
               alt="Compass & Key Group"
-              width={600}
-              height={560}
-              className="h-[46px] lg:h-[56px] w-auto"
+              width={180}
+              height={182}
+              className="h-[44px] lg:h-[56px] w-auto"
               priority
             />
           </Link>

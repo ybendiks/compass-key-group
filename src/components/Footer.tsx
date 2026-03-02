@@ -21,11 +21,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logos/logo-black.webp"
+              src="/images/logos/logo-black-no-bg.png"
               alt="Compass & Key Group"
-              width={400}
-              height={404}
-              className="h-20 w-auto mb-4 brightness-0 invert"
+              width={160}
+              height={162}
+              className="h-20 w-auto mb-4 invert"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Veteran-owned real estate brokerage serving Elizabethtown, Fort
@@ -146,11 +146,11 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <span className="text-xs text-white/50">Brokered by</span>
             <Image
-              src="/images/logos/logo-real-broker-outline.webp"
+              src="/images/logos/real-broker-outline.png"
               alt="Real Broker, LLC"
-              width={400}
-              height={183}
-              className="h-8 w-auto brightness-0 invert opacity-60"
+              width={120}
+              height={55}
+              className="h-7 w-auto invert opacity-60"
             />
           </div>
           <p className="text-xs text-white/40">
