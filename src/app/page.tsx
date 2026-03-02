@@ -59,7 +59,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
       />
       {/* ───────────────────── Hero Section ───────────────────── */}
-      <section className="hero-gradient relative flex items-center">
+      <section className="hero-gradient relative flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
@@ -103,8 +103,8 @@ export default function Home() {
 
             {/* Right — Logo & Wordmark (1/3) */}
             <AnimateOnScroll delay={200}>
-              <div className="flex flex-col items-center justify-center">
-                <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[600px] lg:h-[600px]">
+              <div className="flex flex-col items-center lg:items-start justify-center">
+                <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[960px] lg:h-[960px]">
                   <Image
                     src="/images/logos/logo-black-no-bg.png"
                     alt="Compass & Key Group logo"
@@ -112,7 +112,7 @@ export default function Home() {
                     className="object-contain invert brightness-200"
                   />
                 </div>
-                <p className="font-heading text-2xl lg:text-3xl text-white tracking-wide mt-4 text-center">
+                <p className="font-heading text-2xl lg:text-3xl text-white tracking-wide mt-4 text-center lg:text-left">
                   Compass &amp; Key Group
                 </p>
               </div>
