@@ -27,9 +27,9 @@ export default function Header() {
             <Image
               src="/images/logos/logo-color.webp"
               alt="Compass & Key Group"
-              width={160}
-              height={150}
-              className="h-12 lg:h-14 w-auto"
+              width={600}
+              height={560}
+              className="h-[46px] lg:h-[56px] w-auto"
               priority
             />
           </Link>

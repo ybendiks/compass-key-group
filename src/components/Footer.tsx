@@ -21,11 +21,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logos/logo-color.webp"
+              src="/images/logos/logo-black.webp"
               alt="Compass & Key Group"
-              width={212}
-              height={199}
-              className="h-16 w-auto mb-4 brightness-0 invert"
+              width={400}
+              height={404}
+              className="h-20 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Veteran-owned real estate brokerage serving Elizabethtown, Fort
@@ -142,20 +142,21 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col items-center gap-4">
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-white/50">Brokered by</span>
+            <Image
+              src="/images/logos/logo-real-broker-outline.webp"
+              alt="Real Broker, LLC"
+              width={400}
+              height={183}
+              className="h-8 w-auto brightness-0 invert opacity-60"
+            />
+          </div>
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} Compass and Key Group. All rights
             reserved.
           </p>
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/logos/logo-real-broker-outline.webp"
-              alt="Real Broker, LLC"
-              width={129}
-              height={59}
-              className="h-5 w-auto brightness-0 invert opacity-40"
-            />
-          </div>
         </div>
       </div>
     </footer>
