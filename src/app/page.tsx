@@ -62,9 +62,9 @@ export default function Home() {
       <section className="hero-gradient relative flex items-center">
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 items-center">
-            {/* Left — Text Content (2/3) */}
-            <div className="lg:col-span-2 text-center lg:text-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            {/* Left — Text Content */}
+            <div className="text-center lg:text-left">
               <AnimateOnScroll>
                 <p className="text-gold-light font-body text-sm uppercase tracking-[0.2em] mb-4">
                   Veteran-Owned &middot; Elizabethtown, KY
@@ -104,7 +104,7 @@ export default function Home() {
             {/* Right — Logo & Wordmark (1/3) */}
             <AnimateOnScroll delay={200}>
               <div className="flex flex-col items-center justify-center">
-                <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48">
+                <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[600px] lg:h-[600px]">
                   <Image
                     src="/images/logos/logo-black-no-bg.png"
                     alt="Compass & Key Group logo"
