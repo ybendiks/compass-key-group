@@ -1,10 +1,30 @@
 import Link from "next/link";
+import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export interface RelatedArticle {
   title: string;
   href: string;
 }
+
+const categoryHeroImages: Record<string, string> = {
+  Elizabethtown:
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&h=600&fit=crop",
+  Military:
+    "https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?w=1200&h=600&fit=crop",
+  Bardstown:
+    "https://images.unsplash.com/photo-1584225064785-c62a8b43d148?w=1200&h=600&fit=crop",
+  Radcliff:
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop",
+  "Vine Grove":
+    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&h=600&fit=crop",
+  "I-65 Corridor":
+    "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop",
+  Louisville:
+    "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=1200&h=600&fit=crop",
+  "Central Kentucky":
+    "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=1200&h=600&fit=crop",
+};
 
 interface BlogArticleLayoutProps {
   title: string;
@@ -25,6 +45,9 @@ export default function BlogArticleLayout({
   children,
   relatedArticles,
 }: BlogArticleLayoutProps) {
+  const heroImage =
+    categoryHeroImages[category] || categoryHeroImages["Central Kentucky"];
+
   return (
     <>
       {/* Hero */}
@@ -53,6 +76,25 @@ export default function BlogArticleLayout({
               <span>{date}</span>
               <span className="w-1 h-1 bg-white/40 rounded-full" />
               <span>{readTime}</span>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* Hero Image Banner */}
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
+          <AnimateOnScroll>
+            <div className="relative aspect-[2/1] md:aspect-[16/7] rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src={heroImage}
+                alt={`${title} — ${category} area, Central Kentucky`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 896px"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </AnimateOnScroll>
         </div>
