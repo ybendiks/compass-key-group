@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import PropertyCard from "@/components/PropertyCard";
@@ -58,43 +59,65 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
       />
       {/* ───────────────────── Hero Section ───────────────────── */}
-      <section className="hero-gradient relative min-h-[600px] flex items-center">
+      <section className="hero-gradient relative flex items-center">
         <div className="absolute inset-0 bg-black/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center lg:text-left">
-          <AnimateOnScroll>
-            <p className="text-gold-light font-body text-sm uppercase tracking-[0.2em] mb-4">
-              Veteran-Owned &middot; Elizabethtown, KY
-            </p>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={100}>
-            <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-3xl lg:max-w-4xl">
-              Navigate Your Dream Home
-            </h1>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={200}>
-            <p className="font-body text-xl text-white/90 max-w-2xl mb-10 leading-relaxed">
-              Veteran-owned and locally rooted, Compass & Key Group brings
-              military precision and deep Central Kentucky expertise to every
-              transaction. Whether you&apos;re buying, selling, or relocating,
-              we&apos;ll guide you home.
-            </p>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={300}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href="/buy"
-                className="inline-flex items-center justify-center bg-gold hover:bg-gold-light text-white font-semibold px-10 py-4 rounded-md text-lg transition-colors"
-              >
-                Buy a Home
-              </Link>
-              <Link
-                href="/sell"
-                className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white/10 font-semibold px-10 py-4 rounded-md text-lg transition-colors"
-              >
-                Sell Your Home
-              </Link>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 items-center">
+            {/* Left — Text Content (2/3) */}
+            <div className="lg:col-span-2 text-center lg:text-left">
+              <AnimateOnScroll>
+                <p className="text-gold-light font-body text-sm uppercase tracking-[0.2em] mb-4">
+                  Veteran-Owned &middot; Elizabethtown, KY
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={100}>
+                <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-3xl lg:max-w-4xl">
+                  Navigate Your Dream Home
+                </h1>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={200}>
+                <p className="font-body text-xl text-white/90 max-w-2xl mb-10 leading-relaxed">
+                  Veteran-owned and locally rooted, Compass & Key Group brings
+                  military precision and deep Central Kentucky expertise to every
+                  transaction. Whether you&apos;re buying, selling, or relocating,
+                  we&apos;ll guide you home.
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={300}>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Link
+                    href="/buy"
+                    className="inline-flex items-center justify-center bg-gold hover:bg-gold-light text-white font-semibold px-10 py-4 rounded-md text-lg transition-colors"
+                  >
+                    Buy a Home
+                  </Link>
+                  <Link
+                    href="/sell"
+                    className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white/10 font-semibold px-10 py-4 rounded-md text-lg transition-colors"
+                  >
+                    Sell Your Home
+                  </Link>
+                </div>
+              </AnimateOnScroll>
             </div>
-          </AnimateOnScroll>
+
+            {/* Right — Logo & Wordmark (1/3) */}
+            <AnimateOnScroll delay={200}>
+              <div className="flex flex-col items-center justify-center">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48">
+                  <Image
+                    src="/images/logos/logo-black-no-bg.png"
+                    alt="Compass & Key Group logo"
+                    fill
+                    className="object-contain invert brightness-200"
+                  />
+                </div>
+                <p className="font-heading text-2xl lg:text-3xl text-white tracking-wide mt-4 text-center">
+                  Compass &amp; Key Group
+                </p>
+              </div>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
