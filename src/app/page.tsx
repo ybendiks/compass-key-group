@@ -103,16 +103,16 @@ export default function Home() {
 
             {/* Right — Logo & Wordmark (1/3) */}
             <AnimateOnScroll delay={200}>
-              <div className="flex flex-col items-center justify-center">
-                <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px]">
+              <div className="flex flex-col items-center justify-center gap-2">
+                <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px]">
                   <Image
-                    src="/images/logos/logo-black-no-bg.png"
+                    src="/images/logos/logo-white-no-bg.png"
                     alt="Compass & Key Group logo"
                     fill
-                    className="object-contain invert brightness-200"
+                    className="object-contain"
                   />
                 </div>
-                <p className="font-heading text-2xl lg:text-3xl text-white tracking-wide mt-2 text-center">
+                <p className="font-heading text-2xl lg:text-3xl text-white tracking-wide text-center">
                   Compass &amp; Key Group
                 </p>
               </div>
