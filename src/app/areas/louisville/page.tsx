@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Homes for Sale in Louisville KY",
@@ -9,8 +10,26 @@ export const metadata: Metadata = {
 };
 
 export default function LouisvillePage() {
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: "Louisville, Kentucky",
+    description:
+      "Find homes for sale in Louisville KY. Personalized small-brokerage service from Compass and Key Group.",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 38.2527,
+      longitude: -85.7585,
+    },
+    url: `${SITE_URL}/areas/louisville`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

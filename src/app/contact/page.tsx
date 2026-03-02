@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ContactForm from "@/components/ContactForm";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Contact Us | Elizabethtown KY Realtors",
@@ -9,8 +10,33 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Compass and Key Group",
+    url: `${SITE_URL}/contact`,
+    mainEntity: {
+      "@type": "RealEstateAgent",
+      name: "Compass and Key Group",
+      telephone: "+1-270-735-3897",
+      email: "austin@compassandkeygroup.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "617 N Mulberry St #105B",
+        addressLocality: "Elizabethtown",
+        addressRegion: "KY",
+        postalCode: "42701",
+        addressCountry: "US",
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

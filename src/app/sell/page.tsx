@@ -4,6 +4,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import PropertyCard from "@/components/PropertyCard";
 import { soldListings } from "@/data/listings";
 import { reviews } from "@/data/reviews";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Sell Your Home in Elizabethtown KY",
@@ -86,8 +87,31 @@ const benefits = [
 export default function SellPage() {
   const sellerReview = reviews.find((r) => r.type === "seller");
 
+  const sellSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Home Selling Services",
+    description:
+      "Professional home selling services in Elizabethtown KY with expert marketing, strategic pricing, and local market knowledge.",
+    provider: {
+      "@type": "RealEstateAgent",
+      name: "Compass and Key Group",
+      url: SITE_URL,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Elizabethtown and Central Kentucky",
+    },
+    serviceType: "Real Estate Listing",
+    url: `${SITE_URL}/sell`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(sellSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

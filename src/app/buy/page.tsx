@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import PropertyCard from "@/components/PropertyCard";
 import { listings } from "@/data/listings";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Buy a Home in Elizabethtown KY",
@@ -38,8 +39,25 @@ const buyerSteps = [
 ];
 
 export default function BuyPage() {
+  const buySchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Buy a Home in Elizabethtown KY",
+    url: `${SITE_URL}/buy`,
+    about: "Real estate listings in Elizabethtown and Central Kentucky",
+    provider: {
+      "@type": "RealEstateAgent",
+      name: "Compass and Key Group",
+      url: SITE_URL,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buySchema) }}
+      />
       {/* ───────────────────── Hero Section ───────────────────── */}
       <section className="hero-gradient relative min-h-[420px] flex items-center">
         <div className="absolute inset-0 bg-black/20" />

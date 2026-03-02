@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Homes for Sale in I-65 Corridor KY",
@@ -9,8 +10,26 @@ export const metadata: Metadata = {
 };
 
 export default function I65CorridorPage() {
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: "I-65 Corridor, Kentucky",
+    description:
+      "Find homes along the I-65 corridor between Louisville and Elizabethtown KY. Affordable commuter communities from Compass and Key Group.",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 37.6934,
+      longitude: -85.8591,
+    },
+    url: `${SITE_URL}/areas/i65-corridor`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

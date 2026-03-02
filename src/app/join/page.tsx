@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ContactForm from "@/components/ContactForm";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -103,8 +104,50 @@ const realBrokerBenefits = [
 ];
 
 export default function JoinPage() {
+  const jobSchema = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: "Real Estate Agent",
+    description:
+      "Join Compass and Key Group as a real estate agent. Veteran-led culture, top commission splits with Real Broker LLC, and growth opportunities in Central Kentucky.",
+    datePosted: "2026-03-01",
+    validThrough: "2026-12-31",
+    employmentType: "FULL_TIME",
+    hiringOrganization: {
+      "@type": "RealEstateAgent",
+      name: "Compass and Key Group",
+      sameAs: SITE_URL,
+      logo: `${SITE_URL}/images/logos/logo-color.webp`,
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "617 N Mulberry St #105B",
+        addressLocality: "Elizabethtown",
+        addressRegion: "KY",
+        postalCode: "42701",
+        addressCountry: "US",
+      },
+    },
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: "USD",
+      value: {
+        "@type": "QuantitativeValue",
+        value: "Commission-based",
+        unitText: "YEAR",
+      },
+    },
+    url: `${SITE_URL}/join`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jobSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

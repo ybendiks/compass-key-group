@@ -3,6 +3,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TestimonialCard from "@/components/TestimonialCard";
 import { reviews } from "@/data/reviews";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -14,8 +15,36 @@ export const metadata: Metadata = {
 };
 
 export default function ReviewsPage() {
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    name: "Compass and Key Group",
+    url: SITE_URL,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      bestRating: "5",
+      worstRating: "1",
+      reviewCount: String(reviews.length),
+    },
+    review: reviews.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: String(r.rating),
+        bestRating: "5",
+      },
+      reviewBody: r.text,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

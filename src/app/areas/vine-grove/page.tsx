@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Homes for Sale in Vine Grove KY",
@@ -9,8 +10,26 @@ export const metadata: Metadata = {
 };
 
 export default function VineGrovePage() {
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: "Vine Grove, Kentucky",
+    description:
+      "Explore homes for sale in Vine Grove KY. Affordable small-town living near Fort Knox from Compass and Key Group.",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 37.8101,
+      longitude: -86.0263,
+    },
+    url: `${SITE_URL}/areas/vine-grove`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

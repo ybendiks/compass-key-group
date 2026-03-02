@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TestimonialCard from "@/components/TestimonialCard";
 import { reviews } from "@/data/reviews";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Military Relocation & PCS to Fort Knox",
@@ -104,8 +105,33 @@ const vaLoanBenefits = [
 ];
 
 export default function MilitaryRelocationPage() {
+  const militarySchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Military Relocation & PCS Services",
+    description:
+      "Veteran-owned military relocation services for PCS moves to Fort Knox KY. VA loan expertise, area orientation, and housing support.",
+    provider: {
+      "@type": "RealEstateAgent",
+      name: "Compass and Key Group",
+      url: SITE_URL,
+    },
+    areaServed: [
+      { "@type": "Place", name: "Fort Knox, KY" },
+      { "@type": "Place", name: "Radcliff, KY" },
+      { "@type": "Place", name: "Elizabethtown, KY" },
+      { "@type": "Place", name: "Vine Grove, KY" },
+    ],
+    serviceType: "Military Relocation",
+    url: `${SITE_URL}/military-relocation`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(militarySchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

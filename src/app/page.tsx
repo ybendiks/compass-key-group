@@ -5,6 +5,7 @@ import PropertyCard from "@/components/PropertyCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import { listings } from "@/data/listings";
 import { reviews } from "@/data/reviews";
+import { SITE_URL, organizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -29,8 +30,33 @@ export default function Home() {
   const featuredListings = listings.slice(0, 4);
   const featuredReviews = reviews.slice(0, 3);
 
+  const homeSchema = [
+    {
+      ...organizationSchema,
+      "@type": ["RealEstateAgent", "LocalBusiness"],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Compass and Key Group",
+      url: SITE_URL,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE_URL}/buy?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ];
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
       {/* ───────────────────── Hero Section ───────────────────── */}
       <section className="hero-gradient relative min-h-[600px] flex items-center">
         <div className="absolute inset-0 bg-black/20" />

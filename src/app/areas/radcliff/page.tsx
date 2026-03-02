@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Homes for Sale in Radcliff KY",
@@ -9,8 +10,26 @@ export const metadata: Metadata = {
 };
 
 export default function RadcliffPage() {
+  const placeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: "Radcliff, Kentucky",
+    description:
+      "Find homes for sale in Radcliff KY, adjacent to Fort Knox. Affordable military-friendly housing from Compass and Key Group.",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 37.8404,
+      longitude: -85.9491,
+    },
+    url: `${SITE_URL}/areas/radcliff`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

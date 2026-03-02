@@ -4,6 +4,7 @@ import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TeamCard from "@/components/TeamCard";
 import { team } from "@/data/team";
+import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: {
@@ -48,8 +49,55 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const personSchemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Austin Kutz",
+      jobTitle: "Owner / Realtor",
+      worksFor: {
+        "@type": "RealEstateAgent",
+        name: "Compass and Key Group",
+        url: SITE_URL,
+      },
+      knowsAbout: ["Real Estate", "Military Relocation", "VA Loans"],
+      award: "U.S. Marine Corps Veteran",
+      url: `${SITE_URL}/about`,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Steve Nikirk",
+      jobTitle: "Real Estate Agent",
+      worksFor: {
+        "@type": "RealEstateAgent",
+        name: "Compass and Key Group",
+        url: SITE_URL,
+      },
+      alumniOf: "Oakland City University",
+      url: `${SITE_URL}/about`,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Ciara Hardesty",
+      jobTitle: "Real Estate Agent",
+      worksFor: {
+        "@type": "RealEstateAgent",
+        name: "Compass and Key Group",
+        url: SITE_URL,
+      },
+      knowsAbout: ["Local Builders", "Hardin County Real Estate"],
+      url: `${SITE_URL}/about`,
+    },
+  ];
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchemas) }}
+      />
       {/* Hero */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

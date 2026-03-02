@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { SITE_URL } from "@/lib/schema";
 
 export interface RelatedArticle {
   title: string;
@@ -48,8 +49,39 @@ export default function BlogArticleLayout({
   const heroImage =
     categoryHeroImages[category] || categoryHeroImages["Central Kentucky"];
 
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: heroDescription || title,
+    image: heroImage,
+    datePublished: "2026-03-01",
+    dateModified: "2026-03-01",
+    author: {
+      "@type": "Organization",
+      name: "Compass and Key Group",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Compass and Key Group",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/logos/logo-color.webp`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": SITE_URL,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
       {/* Hero */}
       <section className="hero-gradient text-white py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
