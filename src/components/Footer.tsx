@@ -16,18 +16,28 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Image
-              src="/images/logos/logo-black-no-bg.png"
-              alt="Compass & Key Group"
-              width={160}
-              height={162}
-              className="h-20 w-auto mb-4 invert"
-            />
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/images/logos/logo-black-no-bg.png"
+                alt=""
+                width={44}
+                height={44}
+                className="h-11 w-auto invert"
+              />
+              <div className="leading-none">
+                <span className="block font-heading text-xl font-bold text-white tracking-tight">
+                  Compass & Key
+                </span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-white/50 font-semibold mt-0.5">
+                  Group
+                </span>
+              </div>
+            </div>
+            <p className="text-white/70 text-base leading-relaxed mb-5">
               Veteran-owned real estate brokerage serving Elizabethtown, Fort
               Knox, and Central Kentucky. Built on integrity, service, and
               results.
@@ -50,7 +60,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 hover:text-gold transition-colors"
+                    className="text-base text-white/70 hover:text-gold transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -64,7 +74,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">
               Contact
             </h4>
-            <div className="space-y-3 text-sm text-white/70">
+            <div className="space-y-3 text-base text-white/70">
               <p>617 N Mulberry St #105B</p>
               <p>Elizabethtown, KY 42701</p>
               <a
@@ -142,9 +152,9 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col items-center gap-3">
           <div className="flex items-center gap-2">
-            <span className="text-xs text-white/50">Brokered by</span>
+            <span className="text-sm text-white/50">Brokered by</span>
             <Image
               src="/images/logos/real-broker-outline.png"
               alt="Real Broker, LLC"

@@ -13,12 +13,12 @@ export default function AreasPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient py-20 md:py-28">
+      <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Areas We Serve
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
             From the rolling hills of Hardin County to the vibrant streets of
             Louisville, we know Central Kentucky inside and out. Find the
             community that feels like home.

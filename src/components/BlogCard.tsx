@@ -17,10 +17,10 @@ export default function BlogCard({ post }: { post: BlogPost }) {
           </span>
           <span className="text-xs text-gray-400">{post.readTime}</span>
         </div>
-        <h3 className="font-heading text-lg font-bold text-navy mb-2 group-hover:text-gold transition-colors leading-snug">
+        <h3 className="font-heading text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors leading-snug">
           {post.title}
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed mb-3">
+        <p className="text-base text-gray-600 leading-relaxed mb-3">
           {post.excerpt}
         </p>
         <div className="flex items-center justify-between">

@@ -48,7 +48,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient py-24 sm:py-32">
+      <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -56,7 +56,7 @@ export default function AboutPage() {
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={150}>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               A veteran-owned brokerage built on the values of integrity,
               service, and results. We&apos;re here to guide you home.
             </p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Austin's Story */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Headshot */}
@@ -137,7 +137,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-20 sm:py-28 bg-cream">
+      <section className="py-16 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -163,7 +163,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -199,13 +199,13 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient py-20 sm:py-28">
+      <section className="hero-gradient py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">
               Work With Our Team
             </h2>
-            <p className="text-white/80 text-lg max-w-xl mx-auto mb-8">
+            <p className="text-white/90 text-lg max-w-xl mx-auto mb-8">
               Ready to buy, sell, or relocate? Our team is here to make your
               real estate goals a reality. Reach out today and let&apos;s get
               started.

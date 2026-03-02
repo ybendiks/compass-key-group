@@ -49,7 +49,7 @@ export default function TestimonialCard({ review }: { review: Review }) {
         ))}
       </div>
       {/* Quote */}
-      <p className="text-gray-600 leading-relaxed mb-4 italic">
+      <p className="text-gray-600 text-lg leading-relaxed mb-4 italic">
         &ldquo;{review.text}&rdquo;
       </p>
       {/* Attribution */}

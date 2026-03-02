@@ -46,12 +46,12 @@ export default function Home() {
             </p>
           </AnimateOnScroll>
           <AnimateOnScroll delay={100}>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6 max-w-3xl lg:max-w-4xl">
+            <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-3xl lg:max-w-4xl">
               Navigate Your Dream Home
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={200}>
-            <p className="font-body text-lg sm:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">
+            <p className="font-body text-xl text-white/90 max-w-2xl mb-10 leading-relaxed">
               Veteran-owned and locally rooted, Compass & Key Group brings
               military precision and deep Central Kentucky expertise to every
               transaction. Whether you&apos;re buying, selling, or relocating,
@@ -62,13 +62,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 href="/buy"
-                className="inline-flex items-center justify-center bg-gold hover:bg-gold-light text-white font-semibold px-8 py-4 rounded-md text-lg transition-colors"
+                className="inline-flex items-center justify-center bg-gold hover:bg-gold-light text-white font-semibold px-10 py-4 rounded-md text-lg transition-colors"
               >
                 Buy a Home
               </Link>
               <Link
                 href="/sell"
-                className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-md text-lg transition-colors"
+                className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white/10 font-semibold px-10 py-4 rounded-md text-lg transition-colors"
               >
                 Sell Your Home
               </Link>
@@ -78,14 +78,14 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Value Proposition ───────────────── */}
-      <section className="bg-cream py-20 lg:py-28">
+      <section className="bg-cream py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Why Compass & Key
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 text-lg max-w-2xl mx-auto">
                 A real estate team built on the values that matter most.
               </p>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
                 <h3 className="font-heading text-xl text-navy mb-3">
                   Veteran Values
                 </h3>
-                <p className="font-body text-gray-500 leading-relaxed">
+                <p className="font-body text-gray-600 text-lg leading-relaxed">
                   Integrity, discipline, and service aren&apos;t just words
                   &mdash; they&apos;re the foundation of how we operate. We
                   treat every client like family.
@@ -148,7 +148,7 @@ export default function Home() {
                 <h3 className="font-heading text-xl text-navy mb-3">
                   Local Expertise
                 </h3>
-                <p className="font-body text-gray-500 leading-relaxed">
+                <p className="font-body text-gray-600 text-lg leading-relaxed">
                   Deep knowledge of Elizabethtown, Fort Knox, and Central
                   Kentucky. We know the neighborhoods, schools, and communities
                   inside and out.
@@ -177,7 +177,7 @@ export default function Home() {
                 <h3 className="font-heading text-xl text-navy mb-3">
                   Proven Results
                 </h3>
-                <p className="font-body text-gray-500 leading-relaxed">
+                <p className="font-body text-gray-600 text-lg leading-relaxed">
                   Five-star reviews from happy clients and homes sold across the
                   region. Our track record speaks for itself.
                 </p>
@@ -188,14 +188,14 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Social Proof / Reviews ───────────────── */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 What Our Clients Say
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 text-lg max-w-2xl mx-auto">
                 Real stories from real people we&apos;ve helped navigate the
                 home buying and selling journey.
               </p>
@@ -237,14 +237,14 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Featured Listings ───────────────── */}
-      <section className="bg-cream py-20 lg:py-28">
+      <section className="bg-cream py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Featured Properties
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 text-lg max-w-2xl mx-auto">
                 Explore our hand-picked selection of homes across Central
                 Kentucky.
               </p>
@@ -286,14 +286,14 @@ export default function Home() {
       </section>
 
       {/* ───────────────── Service Areas ───────────────── */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Areas We Serve
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 text-lg max-w-2xl mx-auto">
                 From Elizabethtown to Louisville and everywhere in between, our
                 team knows Central Kentucky.
               </p>
@@ -340,13 +340,13 @@ export default function Home() {
       </section>
 
       {/* ───────────────── CTA Banner ───────────────── */}
-      <section className="hero-gradient py-20 lg:py-24">
+      <section className="hero-gradient py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl text-white mb-6">
               Ready to Find Your Dream Home?
             </h2>
-            <p className="font-body text-white/70 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-white/90 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
               Whether you&apos;re a first-time buyer, relocating with the
               military, or looking for your forever home, we&apos;re here to
               help every step of the way.

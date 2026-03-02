@@ -14,7 +14,7 @@ export default function ReviewsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient text-white py-20 lg:py-28">
+      <section className="hero-gradient text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -22,7 +22,7 @@ export default function ReviewsPage() {
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={100}>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               5-star rated on Google &mdash; see why families across Central
               Kentucky trust Compass &amp; Key Group.
             </p>
@@ -162,7 +162,7 @@ export default function ReviewsPage() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
               Ready to Be Our Next Success Story?
             </h2>
-            <p className="text-gray-300 mb-8 max-w-xl mx-auto">
+            <p className="text-white/90 mb-8 max-w-xl mx-auto">
               Let us show you why our clients keep coming back and referring
               their friends and family.
             </p>

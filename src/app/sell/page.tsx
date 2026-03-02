@@ -89,7 +89,7 @@ export default function SellPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient py-24 sm:py-32">
+      <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -97,7 +97,7 @@ export default function SellPage() {
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={150}>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Expert marketing, strategic pricing, and deep local knowledge to
               get your home sold fast and for the best possible price.
             </p>
@@ -135,7 +135,7 @@ export default function SellPage() {
       </section>
 
       {/* Selling Process */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -159,7 +159,7 @@ export default function SellPage() {
                   <h3 className="font-heading text-xl font-bold text-navy mt-2 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
+                  <p className="text-gray-600 leading-relaxed text-base">
                     {step.description}
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export default function SellPage() {
       </section>
 
       {/* Why Sell With Us */}
-      <section className="py-20 sm:py-28 bg-cream">
+      <section className="py-16 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -192,7 +192,7 @@ export default function SellPage() {
                   <h3 className="font-heading text-lg font-bold text-navy mb-2">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-base leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function SellPage() {
       </section>
 
       {/* Recently Sold */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -229,7 +229,7 @@ export default function SellPage() {
 
       {/* Seller Testimonial */}
       {sellerReview && (
-        <section className="py-20 sm:py-28 bg-cream">
+        <section className="py-16 lg:py-20 bg-cream">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <AnimateOnScroll>
               <div className="mb-8">
@@ -259,13 +259,13 @@ export default function SellPage() {
       )}
 
       {/* CTA */}
-      <section className="hero-gradient py-20 sm:py-28">
+      <section className="hero-gradient py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">
               Ready to Sell? Let&apos;s Talk.
             </h2>
-            <p className="text-white/80 text-lg max-w-xl mx-auto mb-8">
+            <p className="text-white/90 text-lg max-w-xl mx-auto mb-8">
               Whether you&apos;re just exploring your options or ready to list
               tomorrow, we&apos;re here to help you make the best move.
             </p>

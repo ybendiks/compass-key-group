@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient text-white py-20 lg:py-28">
+      <section className="hero-gradient text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -20,7 +20,7 @@ export default function ContactPage() {
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={100}>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Whether you&apos;re buying, selling, or relocating, our team is
               ready to help you every step of the way.
             </p>
@@ -29,7 +29,7 @@ export default function ContactPage() {
       </section>
 
       {/* Two Column Layout */}
-      <section className="py-16 lg:py-24 bg-cream">
+      <section className="py-14 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Contact Form */}

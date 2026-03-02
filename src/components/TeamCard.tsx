@@ -27,7 +27,7 @@ export default function TeamCard({ member }: { member: TeamMember }) {
           {member.name}
         </h3>
         <p className="text-sm font-medium text-gold mb-3">{member.title}</p>
-        <p className="text-sm text-gray-600 leading-relaxed mb-4">
+        <p className="text-base text-gray-600 leading-relaxed mb-4">
           {member.bio.length > 200 ? member.bio.slice(0, 200) + "..." : member.bio}
         </p>
         <div className="flex items-center justify-between">

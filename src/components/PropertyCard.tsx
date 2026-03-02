@@ -34,7 +34,7 @@ export default function PropertyCard({ listing }: { listing: Listing }) {
           </p>
           <span className="text-xs text-gray-400">{listing.type}</span>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           {listing.address}, {listing.city}, {listing.state} {listing.zip}
         </p>
         <div className="flex items-center gap-4 text-sm text-gray-500 border-t border-gray-50 pt-3">

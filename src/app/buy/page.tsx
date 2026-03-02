@@ -63,7 +63,7 @@ export default function BuyPage() {
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={200}>
-            <p className="font-body text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Browse available properties across Central Kentucky. From cozy
               starter homes to spacious family estates, your next chapter starts
               here.
@@ -88,7 +88,7 @@ export default function BuyPage() {
                       <p className="text-xs text-gray-400 mb-0.5 font-body">
                         Location
                       </p>
-                      <p className="text-sm text-gray-500 font-body">
+                      <p className="text-sm text-gray-600 font-body">
                         Elizabethtown, KY
                       </p>
                     </div>
@@ -98,7 +98,7 @@ export default function BuyPage() {
                       <p className="text-xs text-gray-400 mb-0.5 font-body">
                         Price Range
                       </p>
-                      <p className="text-sm text-gray-500 font-body">
+                      <p className="text-sm text-gray-600 font-body">
                         $150k &ndash; $500k
                       </p>
                     </div>
@@ -108,7 +108,7 @@ export default function BuyPage() {
                       <p className="text-xs text-gray-400 mb-0.5 font-body">
                         Beds
                       </p>
-                      <p className="text-sm text-gray-500 font-body">
+                      <p className="text-sm text-gray-600 font-body">
                         Any
                       </p>
                     </div>
@@ -118,7 +118,7 @@ export default function BuyPage() {
                       <p className="text-xs text-gray-400 mb-0.5 font-body">
                         Baths
                       </p>
-                      <p className="text-sm text-gray-500 font-body">
+                      <p className="text-sm text-gray-600 font-body">
                         Any
                       </p>
                     </div>
@@ -166,7 +166,7 @@ export default function BuyPage() {
                 <h3 className="font-heading text-xl text-navy mb-3">
                   Full MLS Property Search Coming Soon
                 </h3>
-                <p className="font-body text-gray-500 max-w-xl mx-auto leading-relaxed mb-6">
+                <p className="font-body text-gray-600 max-w-xl mx-auto leading-relaxed mb-6">
                   Our integrated MLS search is on the way. In the meantime,
                   browse our featured listings below or contact us directly for
                   the latest available homes in your area.
@@ -197,14 +197,14 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── Featured Listings Grid ───────────────── */}
-      <section className="bg-cream py-20 lg:py-28">
+      <section className="bg-cream py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Featured Properties
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 max-w-2xl mx-auto">
                 Explore our current selection of homes across Elizabethtown,
                 Fort Knox, and the surrounding area.
               </p>
@@ -222,14 +222,14 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── Buyer's Guide ───────────────── */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Your Path to Homeownership
               </h2>
-              <p className="font-body text-gray-500 max-w-2xl mx-auto">
+              <p className="font-body text-gray-600 max-w-2xl mx-auto">
                 Buying a home is one of life&apos;s biggest milestones.
                 Here&apos;s how we make the process smooth and stress-free.
               </p>
@@ -255,7 +255,7 @@ export default function BuyPage() {
                   <h3 className="font-heading text-xl text-navy mb-3">
                     {step.title}
                   </h3>
-                  <p className="font-body text-gray-500 leading-relaxed text-sm">
+                  <p className="font-body text-gray-600 leading-relaxed text-base">
                     {step.description}
                   </p>
                 </div>
@@ -266,7 +266,7 @@ export default function BuyPage() {
       </section>
 
       {/* ─────────── Budget Calculator Teaser ─────────── */}
-      <section className="bg-cream py-20 lg:py-24">
+      <section className="bg-cream py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="bg-white rounded-2xl border border-gray-100 p-10 lg:p-14 text-center">
@@ -289,7 +289,7 @@ export default function BuyPage() {
               <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
                 Wondering What You Can Afford?
               </h2>
-              <p className="font-body text-gray-500 max-w-xl mx-auto leading-relaxed mb-8">
+              <p className="font-body text-gray-600 max-w-xl mx-auto leading-relaxed mb-8">
                 Understanding your budget is the first step toward
                 homeownership. Let us connect you with trusted lenders and
                 provide personalized guidance based on your financial goals
@@ -308,13 +308,13 @@ export default function BuyPage() {
       </section>
 
       {/* ───────────────── CTA Banner ───────────────── */}
-      <section className="hero-gradient py-20 lg:py-24">
+      <section className="hero-gradient py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-3xl sm:text-4xl text-white mb-6">
               Ready to Start Your Search?
             </h2>
-            <p className="font-body text-white/70 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-white/90 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
               Our team is standing by to help you find the perfect home in
               Central Kentucky. Reach out today and let&apos;s get started.
             </p>

@@ -107,7 +107,7 @@ export default function MilitaryRelocationPage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-gradient py-20 md:py-28">
+      <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-gold-light text-sm font-medium px-4 py-1.5 rounded-full mb-6">
             <svg
@@ -128,7 +128,7 @@ export default function MilitaryRelocationPage() {
             <br />
             to Another
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
             Veteran-owned. Military-experienced. Your trusted partner for PCS
             moves to Fort Knox and Central Kentucky.
           </p>
@@ -433,7 +433,7 @@ export default function MilitaryRelocationPage() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
               Planning a PCS to Fort Knox?
             </h2>
-            <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
+            <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto">
               Let a fellow veteran make your transition as smooth as possible.
               Reach out today and we&apos;ll start planning your move.
             </p>

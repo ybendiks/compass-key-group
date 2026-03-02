@@ -22,16 +22,24 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          {/* Logo: Icon + Text Wordmark */}
+          <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/images/logos/compass-logo.jpg"
-              alt="Compass & Key Group"
-              width={180}
-              height={182}
-              className="h-[44px] lg:h-[56px] w-auto"
+              src="/images/logos/logo-black-no-bg.png"
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 lg:h-12 w-auto"
               priority
             />
+            <div className="leading-none">
+              <span className="block font-heading text-lg lg:text-xl font-bold text-navy tracking-tight">
+                Compass & Key
+              </span>
+              <span className="block text-[11px] lg:text-xs uppercase tracking-[0.15em] text-navy/60 font-semibold mt-0.5">
+                Group
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
