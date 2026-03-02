@@ -25,7 +25,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src="/images/logo-color.webp"
+              src="/images/logos/logo-color.webp"
               alt="Compass & Key Group"
               width={160}
               height={150}

@@ -21,9 +21,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo-with-broker.webp"
-              alt="Compass & Key Group — Real Broker, LLC"
-              width={433}
+              src="/images/logos/logo-color.webp"
+              alt="Compass & Key Group"
+              width={212}
               height={199}
               className="h-16 w-auto mb-4 brightness-0 invert"
             />
@@ -149,7 +149,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo-broker-outline.webp"
+              src="/images/logos/logo-real-broker-outline.webp"
               alt="Real Broker, LLC"
               width={129}
               height={59}
