@@ -5,7 +5,6 @@ const quickLinks = [
   { href: "/buy", label: "Buy a Home" },
   { href: "/sell", label: "Sell Your Home" },
   { href: "/military-relocation", label: "Military Relocation" },
-  { href: "/areas", label: "Areas We Serve" },
   { href: "/about", label: "About Us" },
   { href: "/reviews", label: "Reviews" },
   { href: "/blog", label: "Blog" },
@@ -13,11 +12,21 @@ const quickLinks = [
   { href: "/join", label: "Join Our Team" },
 ];
 
+const areaLinks = [
+  { href: "/areas/elizabethtown", label: "Elizabethtown" },
+  { href: "/areas/fort-knox", label: "Fort Knox" },
+  { href: "/areas/radcliff", label: "Radcliff" },
+  { href: "/areas/vine-grove", label: "Vine Grove" },
+  { href: "/areas/bardstown", label: "Bardstown" },
+  { href: "/areas/i65-corridor", label: "I-65 Corridor" },
+  { href: "/areas/louisville", label: "Louisville" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
@@ -39,8 +48,7 @@ export default function Footer() {
             </div>
             <p className="text-white/70 text-base leading-relaxed mb-5">
               Veteran-owned real estate brokerage serving Elizabethtown, Fort
-              Knox, and Central Kentucky. Built on integrity, service, and
-              results.
+              Knox, and Central Kentucky.
             </p>
             <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded text-xs font-medium text-gold-light">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -57,6 +65,25 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-base text-white/70 hover:text-gold transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Areas */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">
+              Areas We Serve
+            </h4>
+            <ul className="space-y-2.5">
+              {areaLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
