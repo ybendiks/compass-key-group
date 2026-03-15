@@ -163,31 +163,41 @@ h1, h2, h3, h4, h5, h6 {
   padding: 28px 32px;
 }
 
-/* Form layout: horizontal on desktop, stacked on mobile */
-.idx-search-wrapper form,
-.idx-search-wrapper .IDX-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 16px;
+/* Override all inline IDX styles */
+.idx-search-wrapper * {
+  box-sizing: border-box !important;
 }
 
+/* Grid layout — covers all known IDX wrapper class patterns */
+.idx-search-wrapper .IDX-wrapper-standard,
+.idx-search-wrapper .IDX-quicksearch,
+.idx-search-wrapper form {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+  gap: 16px !important;
+  align-items: end !important;
+  width: 100% !important;
+}
+
+/* Each field group fills its grid cell */
+.idx-search-wrapper .IDX-wrapper-standard > div,
+.idx-search-wrapper .IDX-quicksearch > div,
 .idx-search-wrapper form > div,
-.idx-search-wrapper .IDX-wrapper > div,
 .idx-search-wrapper .IDX-field {
-  flex: 1 1 160px;
-  min-width: 0;
+  width: 100% !important;
 }
 
 /* Labels */
 .idx-search-wrapper label,
 .idx-search-wrapper .IDX-label {
-  display: block;
-  color: var(--navy);
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 6px;
-  font-family: var(--font-body), system-ui, sans-serif;
+  display: block !important;
+  color: #22334b !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 4px !important;
+  font-family: var(--font-body), system-ui, sans-serif !important;
 }
 
 /* Inputs & selects */
@@ -196,33 +206,25 @@ h1, h2, h3, h4, h5, h6 {
 .idx-search-wrapper input[type="number"],
 .idx-search-wrapper input[type="search"],
 .idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]) {
-  width: 100%;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 16px;
-  background: #ffffff;
-  color: var(--text-primary);
-  font-family: var(--font-body), system-ui, sans-serif;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  -webkit-appearance: none;
-  appearance: none;
-  box-sizing: border-box;
+  width: 100% !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 14px !important;
+  font-size: 15px !important;
+  background: #fff !important;
+  color: #22334b !important;
+  font-family: var(--font-body), system-ui, sans-serif !important;
+  outline: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
 }
 
 .idx-search-wrapper select:focus,
 .idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]):focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(223, 183, 102, 0.15);
-}
-
-/* Select arrow */
-.idx-search-wrapper select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2322334b' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
+  border-color: #dfb766 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(223, 183, 102, 0.2) !important;
 }
 
 /* Search button */
@@ -230,57 +232,48 @@ h1, h2, h3, h4, h5, h6 {
 .idx-search-wrapper button[type="submit"],
 .idx-search-wrapper .IDX-searchBtn,
 .idx-search-wrapper button {
-  background: var(--gold) !important;
-  color: #ffffff !important;
-  font-weight: 700;
-  padding: 12px 32px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  font-family: var(--font-body), system-ui, sans-serif;
-  cursor: pointer;
-  transition: background 0.2s;
-  white-space: nowrap;
-  flex-shrink: 0;
+  background: #dfb766 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  padding: 12px 24px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-family: var(--font-body), system-ui, sans-serif !important;
+  transition: background 0.2s !important;
 }
 
 .idx-search-wrapper input[type="submit"]:hover,
 .idx-search-wrapper button[type="submit"]:hover,
 .idx-search-wrapper .IDX-searchBtn:hover,
 .idx-search-wrapper button:hover {
-  background: #c9a255 !important;
+  background: #c9a455 !important;
 }
 
-/* Mobile: stack fields vertically */
-@media (max-width: 640px) {
+/* Tablet: 2 columns */
+@media (max-width: 768px) {
   .idx-search-wrapper {
-    padding: 20px;
+    padding: 20px 16px;
   }
 
-  .idx-search-wrapper form,
-  .idx-search-wrapper .IDX-wrapper {
-    flex-direction: column;
-  }
-
-  .idx-search-wrapper form > div,
-  .idx-search-wrapper .IDX-wrapper > div,
-  .idx-search-wrapper .IDX-field {
-    flex: 1 1 auto;
-    width: 100%;
-  }
-
-  .idx-search-wrapper input[type="submit"],
-  .idx-search-wrapper button[type="submit"],
-  .idx-search-wrapper .IDX-searchBtn,
-  .idx-search-wrapper button {
-    width: 100%;
-    padding: 14px 32px;
+  .idx-search-wrapper .IDX-wrapper-standard,
+  .idx-search-wrapper .IDX-quicksearch,
+  .idx-search-wrapper form {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
-/* Override any inline IDX styles */
-.idx-search-wrapper * {
-  box-sizing: border-box;
+/* Mobile: single column */
+@media (max-width: 480px) {
+  .idx-search-wrapper .IDX-wrapper-standard,
+  .idx-search-wrapper .IDX-quicksearch,
+  .idx-search-wrapper form {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Smooth scrolling */
