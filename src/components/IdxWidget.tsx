@@ -27,17 +27,23 @@ export default function IdxWidget({ src, id, className, quickSearchId }: IdxWidg
     let timer: ReturnType<typeof setTimeout> | undefined;
     if (quickSearchId) {
       timer = setTimeout(() => {
-        const fields = [
-          { id: `IDX-qsMinPrice-${quickSearchId}`, placeholder: "Any" },
-          { id: `IDX-qsMaxPrice-${quickSearchId}`, placeholder: "Any" },
-          { id: `IDX-qsMinBed-${quickSearchId}`, placeholder: "Any" },
-          { id: `IDX-qsMinBath-${quickSearchId}`, placeholder: "Any" },
-        ];
-        for (const f of fields) {
-          const el = document.getElementById(f.id) as HTMLInputElement | null;
-          if (el) {
-            el.value = "";
-            el.placeholder = f.placeholder;
+        const minPrice = document.getElementById(`IDX-qsMinPrice-${quickSearchId}`) as HTMLInputElement | null;
+        const maxPrice = document.getElementById(`IDX-qsMaxPrice-${quickSearchId}`) as HTMLInputElement | null;
+        const minBed = document.getElementById(`IDX-qsMinBed-${quickSearchId}`) as HTMLInputElement | null;
+        const minBath = document.getElementById(`IDX-qsMinBath-${quickSearchId}`) as HTMLInputElement | null;
+        const citySelect = document.getElementById(`IDX-qsCityList-${quickSearchId}`) as HTMLSelectElement | null;
+
+        if (minPrice) minPrice.value = "100000";
+        if (maxPrice) maxPrice.value = "500000";
+        if (minBed) minBed.value = "1";
+        if (minBath) minBath.value = "1";
+
+        if (citySelect) {
+          for (let i = 0; i < citySelect.options.length; i++) {
+            if (citySelect.options[i].text.toLowerCase().includes("elizabethtown")) {
+              citySelect.selectedIndex = i;
+              break;
+            }
           }
         }
       }, 1500);
