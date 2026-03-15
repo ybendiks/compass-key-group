@@ -151,91 +151,59 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
-/* ── IDX Broker Quick Search Widget Styles ── */
+/* ===== IDX Quick Search Widget Restyle ===== */
 
-/* Card wrapper */
-.idx-search-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
-  padding: 28px 32px;
-}
-
-/* Override all inline IDX styles */
-.idx-search-wrapper * {
-  box-sizing: border-box !important;
-}
-
-/* Grid layout — covers all known IDX wrapper class patterns */
-.idx-search-wrapper .IDX-wrapper-standard,
-.idx-search-wrapper .IDX-quicksearch,
-.idx-search-wrapper form {
+/* The form itself — make it a 3-column grid */
+.IDX-quicksearchForm {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 16px !important;
   align-items: end !important;
   width: 100% !important;
 }
 
-/* Each field group fills its grid cell */
-.idx-search-wrapper .IDX-wrapper-standard > div,
-.idx-search-wrapper .IDX-quicksearch > div,
-.idx-search-wrapper form > div,
-.idx-search-wrapper .IDX-field {
+/* Each field wrapper fills its grid cell */
+.IDX-qsFieldWrap {
   width: 100% !important;
 }
 
 /* Labels */
-.idx-search-wrapper label,
-.idx-search-wrapper .IDX-label {
-  display: block !important;
+.IDX-qsLabel {
   color: #22334b !important;
   font-weight: 600 !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
-  margin-bottom: 4px !important;
-  font-family: var(--font-body), system-ui, sans-serif !important;
+  margin-bottom: 6px !important;
+  display: block !important;
 }
 
-/* Inputs & selects */
-.idx-search-wrapper select,
-.idx-search-wrapper input[type="text"],
-.idx-search-wrapper input[type="number"],
-.idx-search-wrapper input[type="search"],
-.idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]) {
+/* All text inputs and selects */
+.IDX-qsTextInput,
+.IDX-qsSelectInput {
   width: 100% !important;
+  padding: 12px 14px !important;
   border: 1px solid #d1d5db !important;
   border-radius: 8px !important;
-  padding: 12px 14px !important;
   font-size: 15px !important;
   background: #fff !important;
   color: #22334b !important;
-  font-family: var(--font-body), system-ui, sans-serif !important;
-  outline: none !important;
-  transition: border-color 0.2s, box-shadow 0.2s !important;
-  appearance: auto !important;
-  -webkit-appearance: auto !important;
+  box-sizing: border-box !important;
 }
 
-.idx-search-wrapper select:focus,
-.idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]):focus {
+.IDX-qsTextInput:focus,
+.IDX-qsSelectInput:focus {
   border-color: #dfb766 !important;
   outline: none !important;
   box-shadow: 0 0 0 3px rgba(223, 183, 102, 0.2) !important;
 }
 
-/* Search button */
-.idx-search-wrapper input[type="submit"],
-.idx-search-wrapper button[type="submit"],
-.idx-search-wrapper .IDX-searchBtn,
-.idx-search-wrapper button {
+/* Submit button — span full width of its cell */
+.IDX-qsButtonInput {
   background: #dfb766 !important;
   color: #fff !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   padding: 12px 24px !important;
   border: none !important;
   border-radius: 8px !important;
@@ -243,35 +211,31 @@ h1, h2, h3, h4, h5, h6 {
   width: 100% !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
-  font-family: var(--font-body), system-ui, sans-serif !important;
-  transition: background 0.2s !important;
 }
 
-.idx-search-wrapper input[type="submit"]:hover,
-.idx-search-wrapper button[type="submit"]:hover,
-.idx-search-wrapper .IDX-searchBtn:hover,
-.idx-search-wrapper button:hover {
+.IDX-qsButtonInput:hover {
   background: #c9a455 !important;
 }
 
-/* Tablet: 2 columns */
-@media (max-width: 768px) {
-  .idx-search-wrapper {
-    padding: 20px 16px;
-  }
+/* Hide the hidden inputs so they don't take grid space */
+.IDX-qsHiddenInput {
+  display: none !important;
+}
 
-  .idx-search-wrapper .IDX-wrapper-standard,
-  .idx-search-wrapper .IDX-quicksearch,
-  .idx-search-wrapper form {
-    grid-template-columns: 1fr 1fr !important;
+/* Make submit row span full width */
+#IDX-qsSubmitWrap-33510 {
+  grid-column: 1 / -1 !important;
+}
+
+/* Responsive: 2 cols on tablet, 1 on mobile */
+@media (max-width: 768px) {
+  .IDX-quicksearchForm {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
-/* Mobile: single column */
 @media (max-width: 480px) {
-  .idx-search-wrapper .IDX-wrapper-standard,
-  .idx-search-wrapper .IDX-quicksearch,
-  .idx-search-wrapper form {
+  .IDX-quicksearchForm {
     grid-template-columns: 1fr !important;
   }
 }
