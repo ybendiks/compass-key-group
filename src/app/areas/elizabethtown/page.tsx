@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import IdxWidget from "@/components/IdxWidget";
 import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -317,6 +318,25 @@ export default function ElizabethtownPage() {
                 </li>
               ))}
             </ul>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* ───────────────── IDX Showcase Listings ───────────────── */}
+      <section className="bg-white py-12 lg:py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateOnScroll>
+            <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-6 text-center">
+              Homes for Sale in Elizabethtown
+            </h2>
+            <IdxWidget
+              src="//compassandkeygroup.idxbroker.com/idx/customshowcasejs.php?widgetid=35738"
+              id="idxwidgetsrc-35738"
+            />
+            <p className="font-body text-xs text-gray-400 text-center mt-4">
+              Listing data provided by IDX Broker. Information deemed reliable
+              but not guaranteed.
+            </p>
           </AnimateOnScroll>
         </div>
       </section>
