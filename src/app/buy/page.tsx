@@ -91,6 +91,7 @@ export default function BuyPage() {
             <IdxWidget
               src="//compassandkeygroup.idxbroker.com/idx/quicksearchjs.php?widgetid=33510"
               id="idxwidgetsrc-33510"
+              className="idx-search-wrapper"
             />
             <p className="font-body text-xs text-gray-400 text-center mt-4">
               Listing data provided by IDX Broker. Information deemed reliable

@@ -151,6 +151,138 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
+/* ── IDX Broker Quick Search Widget Styles ── */
+
+/* Card wrapper */
+.idx-search-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  padding: 28px 32px;
+}
+
+/* Form layout: horizontal on desktop, stacked on mobile */
+.idx-search-wrapper form,
+.idx-search-wrapper .IDX-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.idx-search-wrapper form > div,
+.idx-search-wrapper .IDX-wrapper > div,
+.idx-search-wrapper .IDX-field {
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+/* Labels */
+.idx-search-wrapper label,
+.idx-search-wrapper .IDX-label {
+  display: block;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Inputs & selects */
+.idx-search-wrapper select,
+.idx-search-wrapper input[type="text"],
+.idx-search-wrapper input[type="number"],
+.idx-search-wrapper input[type="search"],
+.idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]) {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  background: #ffffff;
+  color: var(--text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.idx-search-wrapper select:focus,
+.idx-search-wrapper input:not([type="submit"]):not([type="button"]):not([type="hidden"]):focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(223, 183, 102, 0.15);
+}
+
+/* Select arrow */
+.idx-search-wrapper select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2322334b' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+/* Search button */
+.idx-search-wrapper input[type="submit"],
+.idx-search-wrapper button[type="submit"],
+.idx-search-wrapper .IDX-searchBtn,
+.idx-search-wrapper button {
+  background: var(--gold) !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: var(--font-body), system-ui, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.idx-search-wrapper input[type="submit"]:hover,
+.idx-search-wrapper button[type="submit"]:hover,
+.idx-search-wrapper .IDX-searchBtn:hover,
+.idx-search-wrapper button:hover {
+  background: #c9a255 !important;
+}
+
+/* Mobile: stack fields vertically */
+@media (max-width: 640px) {
+  .idx-search-wrapper {
+    padding: 20px;
+  }
+
+  .idx-search-wrapper form,
+  .idx-search-wrapper .IDX-wrapper {
+    flex-direction: column;
+  }
+
+  .idx-search-wrapper form > div,
+  .idx-search-wrapper .IDX-wrapper > div,
+  .idx-search-wrapper .IDX-field {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .idx-search-wrapper input[type="submit"],
+  .idx-search-wrapper button[type="submit"],
+  .idx-search-wrapper .IDX-searchBtn,
+  .idx-search-wrapper button {
+    width: 100%;
+    padding: 14px 32px;
+  }
+}
+
+/* Override any inline IDX styles */
+.idx-search-wrapper * {
+  box-sizing: border-box;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

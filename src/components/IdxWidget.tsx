@@ -5,9 +5,10 @@ import { useEffect, useRef } from "react";
 interface IdxWidgetProps {
   src: string;
   id: string;
+  className?: string;
 }
 
-export default function IdxWidget({ src, id }: IdxWidgetProps) {
+export default function IdxWidget({ src, id, className }: IdxWidgetProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,5 +29,5 @@ export default function IdxWidget({ src, id }: IdxWidgetProps) {
     };
   }, [src, id]);
 
-  return <div ref={containerRef} />;
+  return <div ref={containerRef} className={className} />;
 }
