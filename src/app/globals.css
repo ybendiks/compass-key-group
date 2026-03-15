@@ -153,10 +153,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== IDX Quick Search Widget Restyle ===== */
 
-/* The form itself — make it a 3-column grid */
+/* Force the IDX wrapper to fill the container */
+.IDX-quicksearchWrapper,
+#IDX-quicksearch-33510 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* The form grid — 6 columns so all fields sit in one row */
 .IDX-quicksearchForm {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr 1.5fr !important;
   gap: 16px !important;
   align-items: end !important;
   width: 100% !important;
@@ -198,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 0 3px rgba(223, 183, 102, 0.2) !important;
 }
 
-/* Submit button — span full width of its cell */
+/* Submit button — centered below fields */
 .IDX-qsButtonInput {
   background: #dfb766 !important;
   color: #fff !important;
@@ -222,21 +229,27 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-/* Make submit row span full width */
+/* Submit row spans full width, button centered */
 #IDX-qsSubmitWrap-33510 {
   grid-column: 1 / -1 !important;
+  max-width: 200px !important;
+  margin: 0 auto !important;
 }
 
-/* Responsive: 2 cols on tablet, 1 on mobile */
+/* Responsive: 3 cols on tablet */
 @media (max-width: 768px) {
   .IDX-quicksearchForm {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
+/* 1 col on mobile */
 @media (max-width: 480px) {
   .IDX-quicksearchForm {
     grid-template-columns: 1fr !important;
+  }
+  #IDX-qsSubmitWrap-33510 {
+    max-width: 100% !important;
   }
 }
 
