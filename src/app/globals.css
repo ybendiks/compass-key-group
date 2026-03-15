@@ -184,6 +184,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 6px !important;
   display: block !important;
   white-space: nowrap !important;
+  text-align: center !important;
+}
+
+/* Property Type select full width */
+#IDX-qsPt-33510 {
+  width: 100% !important;
 }
 
 /* All text inputs and selects */
