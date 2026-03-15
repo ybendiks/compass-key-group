@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 /* The form grid — 6 columns so all fields sit in one row */
 .IDX-quicksearchForm {
   display: grid !important;
-  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr 1.5fr !important;
+  grid-template-columns: 1.5fr 1.2fr 1.2fr 1fr 1fr 2fr !important;
   gap: 16px !important;
   align-items: end !important;
   width: 100% !important;
@@ -178,11 +178,12 @@ h1, h2, h3, h4, h5, h6 {
 .IDX-qsLabel {
   color: #22334b !important;
   font-weight: 600 !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   margin-bottom: 6px !important;
   display: block !important;
+  white-space: nowrap !important;
 }
 
 /* All text inputs and selects */
@@ -196,6 +197,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff !important;
   color: #22334b !important;
   box-sizing: border-box !important;
+  overflow: visible !important;
+  text-overflow: ellipsis !important;
 }
 
 .IDX-qsTextInput:focus,
