@@ -2,9 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import PropertyCard from "@/components/PropertyCard";
+import IdxWidget from "@/components/IdxWidget";
 import TestimonialCard from "@/components/TestimonialCard";
-import { listings } from "@/data/listings";
 import { reviews } from "@/data/reviews";
 import { SITE_URL, organizationSchema } from "@/lib/schema";
 
@@ -28,7 +27,6 @@ const serviceAreas = [
 ];
 
 export default function Home() {
-  const featuredListings = listings.slice(0, 4);
   const featuredReviews = reviews.slice(0, 3);
 
   const homeSchema = [
@@ -295,13 +293,16 @@ export default function Home() {
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredListings.map((listing, index) => (
-              <AnimateOnScroll key={listing.id} delay={index * 100}>
-                <PropertyCard listing={listing} />
-              </AnimateOnScroll>
-            ))}
-          </div>
+          <AnimateOnScroll>
+            <IdxWidget
+              src="//compassandkeygroup.idxbroker.com/idx/customshowcasejs.php?widgetid=35734"
+              id="idxwidgetsrc-35734"
+            />
+            <p className="font-body text-xs text-gray-400 text-center mt-4">
+              Listing data provided by IDX Broker. Information deemed reliable
+              but not guaranteed.
+            </p>
+          </AnimateOnScroll>
 
           <AnimateOnScroll delay={500}>
             <div className="text-center mt-10">
