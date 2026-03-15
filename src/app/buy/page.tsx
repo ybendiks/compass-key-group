@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import PropertyCard from "@/components/PropertyCard";
-import { listings } from "@/data/listings";
+import IdxWidget from "@/components/IdxWidget";
 import { SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -82,152 +81,41 @@ export default function BuyPage() {
         </div>
       </section>
 
-      {/* ───────────── MLS Search Widget Placeholder ───────────── */}
+      {/* ───────────── IDX Quick Search Widget ───────────── */}
       <section className="bg-white py-12 lg:py-14">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="bg-cream rounded-2xl border border-gray-200 overflow-hidden">
-              {/* Search Bar Mockup */}
-              <div className="bg-white border-b border-gray-200 p-6 lg:p-8">
-                <h2 className="font-heading text-2xl text-navy mb-6 text-center">
-                  Search Properties
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-                  <div className="lg:col-span-1">
-                    <div className="bg-gray-50 border border-gray-200 rounded-md px-4 py-3">
-                      <p className="text-xs text-gray-400 mb-0.5 font-body">
-                        Location
-                      </p>
-                      <p className="text-sm text-gray-600 font-body">
-                        Elizabethtown, KY
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="bg-gray-50 border border-gray-200 rounded-md px-4 py-3">
-                      <p className="text-xs text-gray-400 mb-0.5 font-body">
-                        Price Range
-                      </p>
-                      <p className="text-sm text-gray-600 font-body">
-                        $150k &ndash; $500k
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="bg-gray-50 border border-gray-200 rounded-md px-4 py-3">
-                      <p className="text-xs text-gray-400 mb-0.5 font-body">
-                        Beds
-                      </p>
-                      <p className="text-sm text-gray-600 font-body">
-                        Any
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="bg-gray-50 border border-gray-200 rounded-md px-4 py-3">
-                      <p className="text-xs text-gray-400 mb-0.5 font-body">
-                        Baths
-                      </p>
-                      <p className="text-sm text-gray-600 font-body">
-                        Any
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="bg-gold/20 border border-gold/30 rounded-md px-4 py-3 flex items-center justify-center gap-2">
-                      <svg
-                        className="w-4 h-4 text-gold"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                        />
-                      </svg>
-                      <p className="text-sm font-semibold text-gold font-body">
-                        Search
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Coming Soon Notice */}
-              <div className="p-8 lg:p-10 text-center">
-                <div className="w-14 h-14 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                  <svg
-                    className="w-7 h-7 text-navy"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0h.008v.008h-.008V7.5zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="font-heading text-xl text-navy mb-3">
-                  Full MLS Property Search Coming Soon
-                </h3>
-                <p className="font-body text-gray-600 max-w-xl mx-auto leading-relaxed mb-6">
-                  Our integrated MLS search is on the way. In the meantime,
-                  browse our featured listings below or contact us directly for
-                  the latest available homes in your area.
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-white font-semibold px-6 py-3 rounded-md transition-colors"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                    />
-                  </svg>
-                  Ask Us About Available Homes
-                </Link>
-              </div>
-            </div>
+            <h2 className="font-heading text-2xl sm:text-3xl text-navy mb-6 text-center">
+              Search Properties
+            </h2>
+            <IdxWidget
+              src="//compassandkeygroup.idxbroker.com/idx/quicksearchjs.php?widgetid=33510"
+              id="idxwidgetsrc-33510"
+            />
+            <p className="font-body text-xs text-gray-400 text-center mt-4">
+              Listing data provided by IDX Broker. Information deemed reliable
+              but not guaranteed.
+            </p>
           </AnimateOnScroll>
         </div>
       </section>
 
-      {/* ───────────────── Featured Listings Grid ───────────────── */}
+      {/* ───────────────── IDX Showcase Listings ───────────────── */}
       <section className="bg-cream py-12 lg:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll>
-            <div className="text-center mb-10">
-              <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4">
-                Featured Properties
-              </h2>
-              <p className="font-body text-gray-600 max-w-2xl mx-auto">
-                Explore our current selection of homes across Elizabethtown,
-                Fort Knox, and the surrounding area.
-              </p>
-            </div>
+            <h2 className="font-heading text-3xl sm:text-4xl text-navy mb-4 text-center">
+              Our Current Listings
+            </h2>
+            <IdxWidget
+              src="//compassandkeygroup.idxbroker.com/idx/customshowcasejs.php?widgetid=35734"
+              id="idxwidgetsrc-35734"
+            />
+            <p className="font-body text-xs text-gray-400 text-center mt-4">
+              Listing data provided by IDX Broker. Information deemed reliable
+              but not guaranteed.
+            </p>
           </AnimateOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {listings.map((listing, index) => (
-              <AnimateOnScroll key={listing.id} delay={(index % 3) * 100}>
-                <PropertyCard listing={listing} />
-              </AnimateOnScroll>
-            ))}
-          </div>
         </div>
       </section>
 
